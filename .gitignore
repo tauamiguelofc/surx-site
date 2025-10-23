@@ -1,36 +1,12 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.db
-*.sqlite3
-
-# Environments
+# Ambiente
 .env
-.venv/
-env/
+node_modules/
+__pycache__/
 venv/
-ENV/
-
-# Flask cache
-instance/
+*.pyc
 *.log
 
-# Node (caso use JS externo)
-node_modules/
-
-# IDE configs
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# Sistema
-.DS_Store
-Thumbs.db
-
-# Compilados / build
+# Build do Next/React
+.next/
 dist/
-build/
-*.egg-info
+out/

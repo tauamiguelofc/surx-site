@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom tweaks */
+:root {
+  --bg: #0f1720; /* dark blue-ish */
+  --panel: #0b0f14;
+  --muted: #94a3b8;
+  --accent: #6b8cff;
+}
+
+html, body, #__next {
+  height: 100%;
+  background: var(--bg);
+  color: #e6eef8;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* small card */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+}
+
+/* buttons */
+.btn {
+  background: linear-gradient(180deg,var(--accent),#3f5ecf);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.04);
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* simple responsive */
+@media (max-width:720px) {
+  .container { padding: 12px; }
+}
